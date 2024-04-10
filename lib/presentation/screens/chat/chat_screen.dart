@@ -9,6 +9,8 @@ import 'package:provider/provider.dart';
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
 
+  static const String name = 'chat_screen';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

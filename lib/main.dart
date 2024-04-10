@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_app/config/router/app_router.dart';
 import 'package:hello_world_app/infrastructure/datasources/local_video_datasource_impl.dart';
 import 'package:hello_world_app/infrastructure/repositories/video_posts_repository_impl.dart';
 import 'package:hello_world_app/presentation/providers/chat_provider.dart';
@@ -21,7 +22,13 @@ class MyApp extends StatelessWidget {
     final videoPostReposity =
         VideoPostsRepositoryImpl(videosDatasource: LocalVideoDatasource());
 
-    return MultiProvider(
+    return MaterialApp.router(
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(selectedColor: 2).theme(),
+    );
+
+    /*return MultiProvider(
       //providers: [ChangeNotifierProvider(create: (_) => ChatProvider())],
       //providers: [
       //  ChangeNotifierProvider(
@@ -37,6 +44,6 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: AppTheme(selectedColor: 2).theme(),
           home: const DiscoverScreen()),
-    );
+    );*/
   }
 }

@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.preferredDarkColorTheme": "Red",
+    "workbench.preferredHighContrastColorTheme": "Red",
+    "workbench.preferredHighContrastLightColorTheme": "Red",
+    "workbench.preferredLightColorTheme": "Red",
+    "workbench.iconTheme": "material-icon-theme",
+    "dart.devToolsTheme": "dark",
+    "material-icon-theme.activeIconPack": "angular"
+}
